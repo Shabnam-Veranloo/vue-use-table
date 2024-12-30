@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: 62.5%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+#app{
+  height: 100vh;
+  width: 100vw;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  max-height: 80vh;
+  position: relative;
+
+
+}
+
+thead{
+  position: sticky;
+}
+
+thead th,
+tbody td {
+  padding: 1rem 2rem;
+  text-align: left;  
+}
+
+thead th {
+  width: auto; 
+}
+
+thead th:nth-child(5),
+tbody td:nth-child(5) {
+  flex: 1;
+  text-align: left; 
+  min-width: 20vw;
+}
+
+
+tbody td:not(:first-child):not(:nth-child(5)),
+thead th:not(:first-child):not(:nth-child(5)) {
+  width: 30rem;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  vertical-align: top; /* Ensure content aligns properly */
+}
+
+
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: .8rem solid transparent;
+  border-right: .8rem solid transparent;
+  border-bottom: 1rem solid gray; 
+}
+
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: .8rem solid transparent;
+  border-right: .8rem solid transparent;
+  border-top: 1rem solid gray; 
+}
